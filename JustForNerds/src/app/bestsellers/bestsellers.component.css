@@ -1,0 +1,12 @@
+.card-img-top {
+    width: 205px;
+    height: 294px;
+    margin-left: 45px;
+    margin-top: 25px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.col button{
+    margin-left:0px;
+}

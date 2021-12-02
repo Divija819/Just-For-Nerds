@@ -1,0 +1,143 @@
+.navbar img{
+    height: 139px;
+    margin-left: 27px;
+    width: 228px;
+}
+
+.navbar{
+    background-color: #2c1104;
+}
+
+.newArrival{
+    position: absolute;
+    margin-left: 469px;
+    margin-top: 89px;
+}
+
+.bestSellers{
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 224px;
+    font-size: 19px;
+}
+
+.books{
+    position: absolute;
+    margin-left: 128px;
+    margin-top: -11px;
+    font-size: 19px;
+}
+
+.register{
+    position: absolute;
+    margin-top: -11px;
+    font-size: 19px;
+    margin-left: 11px;
+}
+
+.search-container {
+    width: 29%;
+    margin-left: 51px;
+    margin-top: 68px;
+    position: absolute;
+}
+
+.searchBar{
+    position: absolute;
+    margin-top: 6px;
+}
+
+.fa-search{
+    margin-left: -22px;
+    margin-top: -21px;
+}
+
+.searchBar{
+    position: absolute;
+    
+}
+
+.inputSearch{
+    position: absolute;
+    margin-left: 235px;
+    margin-top: 0;
+    width: 60%;
+}
+
+.submitButton{
+    margin-left: 528px;
+    width: 15%;
+    padding: 6px;
+}
+
+.newArrival{
+    position: absolute;
+    margin-left: 372px;
+    margin-top: -11px;
+    font-size: 19px;
+}
+
+.genres{
+    position: absolute;
+    margin-left: 587px;
+    margin-top: 70px;
+}
+
+.dropdown{
+    position: absolute;
+    margin-left: -67px;
+    margin-top: -2px;
+}
+
+.allButton{
+    width: 15%;
+    padding: 7px;
+}
+
+.fa-comments{
+    color: gray;
+    font-size: 48px;
+    margin-left: 30px;
+    margin-top: 6px;
+}
+.fa-sign-out-alt{
+    position: absolute;
+    font-size: 42px;
+    margin-left: 1127px;
+    margin-top: -23px
+}
+
+.fa-comments{
+    position: absolute;
+    font-size: 38px;
+    margin-left: 283px;
+    margin-top: 22px;
+}
+
+.fa-shopping-cart{
+    font-size: 42px;
+    margin-left: 1042px;
+    position: absolute;
+    margin-top: -23px;
+}
+
+.fa-home{
+    font-size: 42px;
+    position: absolute;
+    margin-left: 909px;
+    margin-top: -22px;
+}
+
+.usedBooks{
+    position: absolute;
+    margin-left: 545px;
+    margin-top: -11px;
+    font-size: 19px;
+}
+
+.sell{
+    position: absolute;
+    margin-left: 398px;
+    font-size: 19px;
+    margin-top: -5px;
+}

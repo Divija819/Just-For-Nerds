@@ -1,0 +1,44 @@
+.username{
+    color:white;
+}
+
+.registerHeader{
+    color:white;
+}
+
+.password{
+    color:white;
+}
+
+.mobile{
+    color:white;
+}
+
+.address{
+    color:white;
+}
+
+body{
+    height: 768px;
+}
+
+.buttonBuyNow{
+    margin-left: 379px;
+}
+
+.street1{
+    color:white;
+}
+
+.Landmark{
+    color:white;
+}
+
+.email{
+    color:white;
+}
+
+.cen{
+    width: 59%;
+    margin-left: 346px;
+}

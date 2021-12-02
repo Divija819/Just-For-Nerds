@@ -1,0 +1,20 @@
+
+<body background="assets/library.jpeg">
+<div class="loginForm">
+<h2 class="loginHeader">Login</h2>
+<form #loginForm="ngForm" (ngSubmit)="validateUser(loginForm.value)" novalidate>
+<input type="text" name="userName" placeholder="Enter username" ngModel #userName="ngModel" required ><br/>
+<input type="password" name="password" placeholder="Enter Password" ngModel #password="ngModel" 
+required minlength="4" maxlength="10"><br/>
+<button [disabled]="!loginForm.valid">Login</button>
+</form>
+</div>
+<div class="warnings">
+<div *ngIf="loginForm.invalid && (loginForm.dirty || loginForm.touhed)">invalid error occurred</div>
+<div class="warningsLogin">
+<div *ngIf="userName.errors?.required">Please enter username..</div>
+<div *ngIf="password.errors?.minlength">Please enter 4 characters..</div>
+<div *ngIf="password.errors?.required">Please enter password..</div> 
+</div>
+</div>
+</body>

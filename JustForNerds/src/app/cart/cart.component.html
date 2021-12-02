@@ -1,0 +1,14 @@
+<h2 style="text-align: center">Selected Books {{cartItems.length}}</h2>
+<div>
+<table border=2 align="center">
+<tr><th>BOOKID</th><th>BOOKNAME</th><th>AUTHOR</th><th>PRICE</th></tr>
+<tr *ngFor="let book of cartItems">
+  <td>{{book.bookid}}</td>
+  <td>{{book.bookname | uppercase}}</td>
+  <td>{{book.author}}</td>
+  <td>{{book.price |currency: 'INR'}}</td>
+  </tr>  
+</table>
+<h2 style="text-align: center">
+<button class="btn btn-primary buttonBuyNow" (click)="buynow(book)">Buy Now</button></h2>
+</div>

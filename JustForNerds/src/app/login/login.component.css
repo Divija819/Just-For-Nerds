@@ -1,0 +1,37 @@
+.loginButton button{
+    position: absolute;
+    width: 20%;
+    margin-left: 981px;
+    margin-top: -351px;
+}
+
+.logoImage{
+    margin-left: 235px;
+    margin-top: 124px;
+}
+
+.loginForm{
+    width: 338px;
+    margin-left: 1068px;
+    margin-top: 151px;
+    position: absolute;
+}
+
+.warnings{
+    margin-left: 1159px;
+    margin-top: 442px;
+    position: absolute;
+}
+
+body{
+    height: 610px;
+}
+
+.loginHeader{
+    color: white;
+}
+
+.warningsLogin{
+    color: white;
+}
+

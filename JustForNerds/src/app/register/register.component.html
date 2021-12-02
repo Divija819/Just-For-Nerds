@@ -1,0 +1,17 @@
+<body background="assets/library.jpeg">
+  <div class = "cen">
+    <div class = "reg">
+      <h1 class="registerHeader">Registration</h1>
+      <div class="form">
+      
+      <b>Username</b> <input type = "text" [(ngModel)] = 'user.userName' placeholder = "Username"><br/>
+      <b>Password</b> <input type = "password" [(ngModel)] = 'user.password' placeholder = "Password"
+      required minlength="4" maxlength="10"><br/>
+      <b>MobileNo</b> <input type = "text" [(ngModel)] = 'user.mobileNo' placeholder = "MobileNo"><br/>
+      <b>Address</b> <input type = "text" [(ngModel)] = 'user.address' placeholder = "Address"><br/>
+      <div *ngIf="user.password.errors?.minlength">Please enter 4 characters..</div>
+      <button (click)="regEmp()">Register</button>
+      </div>
+    </div>
+  </div>
+  </body>

@@ -1,0 +1,11 @@
+enter empId : <input type = "text" [(ngModel)] = "id"><br/>
+<button (click) = "displaybyid()">show emp</button><br/>
+<li *ngFor = "let e of employees">
+  <p *ngIf ="id == e.empId">
+    empId : {{e.empId}}<br/>
+    empName : {{e.empName}}<br/>
+    salary : {{e.salary}}<br/>
+    Gender : {{e.gender}}<br/>
+    Doj : {{e.doj}}<br/>
+  </p>
+</li>

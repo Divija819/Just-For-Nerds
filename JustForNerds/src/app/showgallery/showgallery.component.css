@@ -1,0 +1,24 @@
+.card-img-top {
+    margin-left: 65px;
+    margin-top: 15px;
+    width: 178px;
+    height: 268px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.addToCart{
+    margin-top: -16px;
+    margin-left: -37px;
+}
+
+#carouselExampleIndicators {
+    position: absolute;
+    width: 100%;
+    margin-top: 0;
+}
+
+.bookDisplay{
+    margin-top: 361px;
+    margin-right: 0;
+}

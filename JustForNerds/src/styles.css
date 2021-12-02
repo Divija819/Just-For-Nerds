@@ -1,0 +1,1144 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+a{
+  cursor:pointer;
+}
+body{
+  margin:0 auto;
+  font-family: Gaegu;
+}
+
+.topBar{
+  position: absolute;
+  height: 185px;
+  width: 100%;
+  background: #1a2d41;
+}
+
+.search-container{
+width: 29%;
+position: absolute;
+margin-top: 68px;
+margin-left: 591px;
+}
+
+.searchIcon{
+width: 4%;
+position: absolute;
+margin-left: 1031px;
+margin-top: 74px;
+}
+.logo img{
+position: absolute;
+height: 180px;
+width: 280px;
+margin-left: 184px;
+}
+
+.hamburger i{
+  color: white;
+  font-size: 45px;
+  position: absolute;
+  margin-top: 69px;
+  margin-left: 73px;
+}
+
+#dropbtn:hover, #dropbtn:focus {
+  color: #b8a74a;
+}
+
+#searchIcon:hover, #searchIcon:focus {
+  color: #b8a74a;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 130px;
+  margin-left: 40px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+#cartIcon{
+  color: white;
+}
+
+
+#cartIcon:hover, #cartIcon:focus {
+  color: #b8a74a;
+}
+#loginIcon{
+  color: white;
+}
+
+#loginIcon:hover, #loginIcon:focus {
+  color: #b8a74a;
+}
+
+#signUpIcon{
+  color: white;
+}
+
+#signUpIcon:hover, #signUpIcon:focus {
+  color: #b8a74a;
+}
+
+
+.cart{
+font-size: 45px;
+position: absolute;
+margin-top: 62px;
+margin-left: 1205px;
+}
+
+.login{
+font-size: 45px;
+position: absolute;
+margin-top: 62px;
+margin-left: 1317px;
+}
+
+.signUp{
+font-size: 45px;
+position: absolute;
+margin-top: 62px;
+margin-left: 1410px;
+}
+
+
+.topBar2{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  margin-top: 185px;
+  background-color: #e3e3e3;
+}
+
+/* Bordered form */
+form {
+  border: none;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 37%;
+   /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0; 
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+#width{
+  width: 37%;
+}
+
+/* */
+
+* {box-sizing: border-box}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+button:hover {
+opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn2 {
+padding: 14px 20px;
+background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn2, .signupbtn {
+float: left;
+width: 50%;
+}
+
+/* Add padding to container elements */
+.container2 {
+padding: 16px;
+}
+
+/* The Modal (background) */
+.modal2 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: #474e5d;
+padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+background-color: #fefefe;
+margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close2 {
+position: absolute;
+right: 35px;
+top: 15px;
+font-size: 40px;
+font-weight: bold;
+color: #f1f1f1;
+}
+
+.close2:hover,
+.close2:focus {
+color: #f44336;
+cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix2::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+.cancelbtn2, .signupbtn {
+  width: 100%;
+}
+}
+
+.header{
+font-family: Gaegu;
+  color: white;
+  position: absolute;
+  margin-top: -140px;
+  margin-left: 506px;
+  font-size: 58px;
+}
+
+.sell img{
+  position: absolute;
+  height: 267px;
+  margin-top: 646px;
+  margin-left: 215px;
+}
+
+.sell {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sell:hover .image {
+  opacity: 0.3;
+}
+
+.sell:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  margin-top: 1583px;
+  margin-left: -136px;
+}
+
+.btn {
+  width: 161px;
+  margin-left: 256px;
+  margin-top: 5px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.success {
+  border-color: #4CAF50;
+  color: green;
+  margin-left: 87px;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Blue */
+.info {
+border-color: #2196F3;
+color: dodgerblue;
+margin-left: 109px;
+}
+
+.info:hover {
+background: #2196F3;
+color: white;
+}
+
+/* Orange */
+.warning {
+border-color: #ff9800;
+color: orange;
+margin-left: 109px;
+}
+
+.warning:hover {
+background: #ff9800;
+color: white;
+}
+
+/* Red */
+.danger {
+border-color: #f44336;
+color: red;
+margin-left: 100px;
+}
+
+.danger:hover {
+background: #f44336;
+color: white;
+}
+
+.default {
+border-color: #ca1dca;
+color: black;
+margin-left: 92px;
+}
+
+.default:hover {
+background: #ca1dca;
+}
+
+.genresContent {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+margin-top: 130px;
+margin-left: 40px;
+}
+
+.genresContent a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.genres {
+display:block;
+margin-top: 0px;
+margin-left: 89px;
+margin-right: -22px;
+}
+
+#carouselExampleIndicators{
+position: absolute;
+margin-top: 235px;
+width: 100%;
+}
+
+.image2{
+position: absolute;
+height: 267px;
+margin-left: 516px;
+margin-top: 646px;
+opacity: 1;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+
+.holmes{
+width: 50%;
+}
+
+.middle2 {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.holmes:hover .image2 {
+opacity: 0.3;
+}
+
+.holmes:hover .middle2 {
+opacity: 1;
+}
+.text2 {
+background-color: #4CAF50;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
+position: absolute;
+margin-top: 365px;
+margin-left: -187px;
+}
+
+.image3{
+position: absolute;
+height: 267px;
+margin-left: 818px;
+margin-top: 646px;
+opacity: 1;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+
+.percyJack{
+width: 50%;
+}
+
+.middle3 {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+.percyJack:hover .image3 {
+opacity: 0.3;
+}
+
+.percyJack:hover .middle3 {
+opacity: 1;
+}
+.text3 {
+background-color: #4CAF50;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
+position: absolute;
+margin-top: 365px;
+margin-left: 101px;
+}
+
+.image4{
+position: absolute;
+height: 267px;
+margin-left: 1134px;
+margin-top: 646px;
+opacity: 1;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+
+.theFault{
+width: 50%;
+}
+
+.middle4 {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+.theFault:hover .image4 {
+opacity: 0.3;
+}
+
+.theFault:hover .middle4 {
+opacity: 1;
+}
+.text4 {
+background-color: #4CAF50;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
+position: absolute;
+margin-top: 365px;
+margin-left: 421px;
+}
+
+.addToCart{
+position: absolute;
+  margin-top: 935px;
+  font-size: 29px;
+  color: #dc3535;
+}
+
+#cartIcon1{
+margin-left: 249px;
+}
+
+#cartIcon2{
+margin-left: 554px;
+}
+
+#cartIcon3{
+margin-left: 847px;
+}
+
+#cartIcon4{
+margin-left: 1159px;
+
+}
+
+.addToCart:hover{
+color:rgba(151, 189, 149, 0.815);
+}
+
+.filterContent {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+margin-top: 130px;
+margin-left: 40px;
+}
+
+.filterContent a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.filter {
+display:block;
+margin-top: 0px;
+margin-left: 89px;
+margin-right: -22px;
+}
+
+.filterContent a:hover {background-color: #ddd}
+
+.filter {display:block;}
+
+#filterDropdown{
+  position: absolute;
+  margin-left: 552px;
+  margin-top: 108px;
+}
+
+/* The Modal (background) */
+.modal3 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content3 {
+background-color: #fefefe;
+margin: 5px auto; /* 15% from the top and centered */
+border: 1px solid #888;
+width: 37%;
+ /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close3 {
+/* Position it in the top right corner outside of the modal */
+position: absolute;
+right: 25px;
+top: 0; 
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+/* Close button on hover */
+.close3:hover,
+.close3:focus {
+color: rgb(107, 109, 139);
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+#width3{
+width: 37%;
+}
+
+.imgcontainer3 img{
+height: 50%;
+width: 50%;
+margin-left: 130px;
+margin-top: 57px;
+}
+.addToCartBtn button{
+width: 50%;
+margin-left: 129px;
+}
+
+/* The Modal (background) */
+.modal4 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content4 {
+background-color: #fefefe;
+margin: 5px auto; /* 15% from the top and centered */
+border: 1px solid #888;
+width: 37%;
+ /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close4 {
+/* Position it in the top right corner outside of the modal */
+position: absolute;
+right: 25px;
+top: 0; 
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+/* Close button on hover */
+.close4:hover,
+.close4:focus {
+color: rgb(107, 109, 139);
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+#width4{
+width: 37%;
+}
+
+.imgcontainer4 img{
+height: 50%;
+width: 50%;
+margin-left: 130px;
+margin-top: 57px;
+}
+.addToCartBtn button{
+width: 50%;
+margin-left: 129px;
+}
+
+/* The Modal (background) */
+.modal5 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content5 {
+background-color: #fefefe;
+margin: 5px auto; /* 15% from the top and centered */
+border: 1px solid #888;
+width: 37%;
+ /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close5 {
+/* Position it in the top right corner outside of the modal */
+position: absolute;
+right: 25px;
+top: 0; 
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+/* Close button on hover */
+.close5:hover,
+.close5:focus {
+color: rgb(107, 109, 139);
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+#width5{
+width: 37%;
+}
+
+.imgcontainer5 img{
+height: 50%;
+width: 50%;
+margin-left: 130px;
+margin-top: 57px;
+}
+.addToCartBtn button{
+width: 50%;
+margin-left: 129px;
+}
+
+/* The Modal (background) */
+.modal6 {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content6 {
+background-color: #fefefe;
+margin: 5px auto; /* 15% from the top and centered */
+border: 1px solid #888;
+width: 37%;
+ /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close6 {
+/* Position it in the top right corner outside of the modal */
+position: absolute;
+right: 25px;
+top: 0; 
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+/* Close button on hover */
+.close6:hover,
+.close6:focus {
+color: rgb(107, 109, 139);
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+#width6{
+width: 37%;
+}
+
+.imgcontainer6 img{
+height: 50%;
+width: 50%;
+margin-left: 130px;
+margin-top: 57px;
+}
+.addToCartBtn button{
+width: 50%;
+margin-left: 129px;
+}
+.bottomBar{
+position: absolute;
+  margin-top: 1157px;
+  height: 190px;
+  width: 100%;
+  background-color: #1a2d41;
+}
+
+.fa {
+padding: 20px;
+font-size: 30px;
+text-align: center;
+text-decoration: none;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+.fa-pinterest {
+background: #cb2027;
+color: white;
+}
+
+.fa-snapchat-ghost {
+background: #fffc00;
+color: white;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.searchIcon button{
+height: 54px;
+margin-top: -1px;
+}
+
+.fa-search{
+margin-left: -22px;
+margin-top: -21px;
+}
+
+.fa-user{
+font-size: 52px;
+margin-left: -15px;
+margin-top: -11px;
+}
+
+.carousel-indicators{
+position:absolute;
+}
+
+.socialMediaIcons{
+margin-left: 135px;
+margin-top: 34px;
+}
+
+.ruler{
+background-color: white;
+height: 1px;
+margin-top: 36px;
+}
+
+.disc{
+font-family: Gaegu;
+color: white;
+font-size: 23px;
+margin-top: 12px;
+margin-left: 756px;
+}
+
+.number{
+margin-top: -92px;
+margin-left: 40px;
+}
+#number{
+width: 13%;
+padding: 3px;
+height: 21px;
+background: #b3d7ff;
+font-size: 17px;
+}
+
+.removeFrom:hover{
+color:yellow;
+}
+
+.fa-star{
+position: absolute;
+font-size: 29px;
+color: #56adeb;
+margin-top: 934px;
+}
+
+#starIcon1{
+margin-left: 327px;
+}
+
+#starIcon2{
+margin-left: 636px;
+}
+
+#starIcon3{
+margin-left: 927px;
+}
+
+#starIcon4{
+margin-left: 1235px;
+}
+
+.fa-star:hover{
+color:black;
+}

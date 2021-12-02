@@ -1,0 +1,25 @@
+<table border="1" bgcolor="orange" width ="750" height="50">
+     <tr>
+       <th>empId</th>
+       <th>empName</th>
+       <th>gender</th>
+       <th>Date of Join</th>
+       <th>salary</th>
+       <th>experience</th>
+       <th>phone number</th>
+       <th>country code</th>
+ </tr>
+
+ <ng-container *ngFor = "let e of array">
+   <tr>
+     <td>{{e.id}}</td>
+     <td>{{e.name|gender:e.gender}}</td>
+     <td>{{e.gender}}</td>
+     <td>{{e.doj|date: fullDate}}</td>
+     <td>{{e.salary| currency:'INR'}}</td>
+     <td>{{e.doj|experience}}</td>
+     <td>{{e.phonenumber|countrycode:e.countrycode}}</td>
+     <td>{{e.countrycode|countrycode}}</td>
+   </tr>
+ </ng-container>
+</table>

@@ -1,0 +1,30 @@
+.registerForm{
+    width: 49%;
+    margin-top: 101px;
+    margin-left: 390px;
+}
+
+.reg{
+    width: 44%;
+    position: absolute;
+    margin-left: 442px;
+    margin-top: 63px;
+}
+
+.registerHeader{
+    margin-left: 216px;
+    color:white;
+}
+
+.reg button{
+    width: 31%;
+    margin-left: 230px;
+}
+
+.form{
+    color:white;
+}
+
+body{
+    height: 666px;
+}

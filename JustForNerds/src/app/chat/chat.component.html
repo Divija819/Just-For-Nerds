@@ -1,0 +1,21 @@
+<!-- <app-header></app-header> -->
+<!-- <app-sidebar></app-sidebar> -->
+<div class="forum" *ngFor="let text of forum">
+        <td>{{text.userName}}  : {{text.msg}}</td>
+</div>
+<div class = "ip">
+<input type = "text"  placeholder="Type a message" [(ngModel)]="msg" style="width: 20%;
+position: absolute;
+margin-left: 600px;
+margin-top: 200px">
+<button class="btn btn-primary" (click)="addToForum()"style="    position: absolute;
+margin-left: 946px;
+margin-top: 209px;">Send</button> 
+<style>
+        .btn-primary{
+                color: #fff;
+    background-color: #721c24;
+    border-color: #721c24;
+        }
+</style>
+</div>

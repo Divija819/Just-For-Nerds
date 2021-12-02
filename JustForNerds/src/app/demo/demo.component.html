@@ -1,0 +1,13 @@
+<p>
+  Name:{{name}} <br/>
+  Age:{{age}} <br/>
+  Isboolean:{{isboolean}}<br/>
+  Remark:{{remark}}<br/>
+  Message:<input type="text" [(ngModel)]="message"/><br/>{{message}}
+</p>
+
+<ol>
+  <li *ngFor ="let hobby of hobbies">
+    {{hobby}}
+  </li>
+</ol>
